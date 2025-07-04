@@ -1,0 +1,88 @@
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: block;
+        font-size: medium;
+        /* transition: max-height 0.4s ease; */
+    }
+
+    .right-div {
+        padding-top: 20px;
+        display: block;
+        text-align: center;
+        font-size: small;
+    }
+
+    .right-div.open {
+        max-height: 500px;
+        /* Adjust based on content height */
+    }
+
+
+    .right-div li {
+        padding: 5px;
+    }
+
+    .right-div li a {
+        text-decoration: underline !important;
+
+    }
+
+    .left-div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .Home {
+        display: block;
+    }
+
+    .home-left h1 {
+        font-size: x-large !important;
+        /* text-align: center; */
+    }
+
+    .home-left p {
+        font-size: small !important;
+    }
+
+    .about-list {
+        display: block;
+    }
+
+    .about-left {
+        margin-left: 0;
+    }
+
+    .about-right {
+        margin-right: 0;
+    }
+
+    .project {
+        max-width: 100%;
+    }
+
+    .about-list div div  {
+        max-width: 100%;
+        font-size: smaller !important;
+        /* justify-content: center; */
+    }
+
+    .project-main {
+        font-size: smaller;
+    }
+
+    .footer-icons i {
+        font-size: large !important;
+    }
+
+    .skill-card center p{
+        font-size: smaller;
+    }
+    section h1{
+        font-size: x-large !important;
+    }
+}

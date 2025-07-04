@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+html {
+    scroll-behavior: smooth;
+      scroll-padding-top: 50px; /* ya jitni height navbar ki hai */
+
+}
+
+.row{
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none !important;
+    color: whitesmoke !important;
+}
+
+section {
+    height: auto;
+    padding: 2rem;
+}
+
+section h1{
+    font-weight: bolder !important;
+    font-size: xx-large !important;
+}
+
+nav {
+    padding: 7px !important; 
+    padding-bottom: 0 !important;
+    /* margin-bottom: 0; */
+    background-color: #0f0f0f;
+    color: whitesmoke;
+    font-family: 'Poppins';
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    /* vertical-align: center; */
+}
+
+nav ul {
+    /* background-color: #0f0f0f; */
+    display: flex;
+    justify-content: space-between;
+    /* padding-bottom: 0 !important; */
+}
+
+.left-div,
+.right-div {
+    display: flex;
+    gap: 25px;
+}
+
+.right-div {
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+
+a:hover{
+    color: whitesmoke;
+    padding-bottom: 0 !important;
+}
+
+li {
+    list-style: none;
+}
+
+#Home {
+    align-items: center;
+    padding: 2rem;
+    /* background-color: #EAE4D5; */
+    background-color: #F8F9FA
+;
+
+
+}
+
+.Home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+
+}
+
+.home-left {
+    flex: 1;
+    margin-left: 5%;
+}
+
+.home-right {
+    flex: 1;
+    margin-right: 5%;
+    /* max-height: 300px; */
+}
+
+.home-left h1 {
+    font-size: 2.3rem;
+    margin-top: 10px;
+    /* around 40px */
+    font-weight: 700;
+    line-height: 1.2;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-left p {
+    font-size: 1.1rem;
+    /* around 18px */
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.home-left h1,
+.home-left p {
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+
+.home-left p:nth-of-type(2) {
+    animation-delay: 0.5s;
+}
+
+.home-left p:nth-of-type(3) {
+    animation-delay: 1s;
+}
+
+.home-left p:nth-of-type(4) {
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.popup-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: popIn 0.8s ease-out forwards;
+    animation-delay: 0.3s;
+    z-index: inherit;
+}
+
+@keyframes popIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#About {
+    /* background-color: #D5E5D5; */
+    background-color: #E9ECEF
+;
+}
+
+#Projects {
+    background-color: #FFFFFF
+;
+}
+
+#Skills {
+    background-color: #DEE2E6
+
+;
+}
+
+#Contacts {
+    background-color: #F8F9FA;
+    color: black
+;
+}
+
+.social-media-icons {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: xx-large;
+    color: black;
+}
+
+#About {
+    padding: 2rem;
+    font-family: 'Poppins';
+}
+
+.about-list div div {
+    max-width: 500px;
+    background-color: black;
+    color: whitesmoke;
+    /* padding-bottom: 20px; */
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.about-list {
+    display: flex;
+    justify-content: space between;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-right {
+    flex: 1;
+    margin-right: 7%;
+}
+
+.about-left {
+    flex: 1;
+    margin-left: 7%;
+}
+
+strong {
+    color: gold;
+}
+
+.skill-card {
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+    background-color: black;
+    /* background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2); */
+    color: white;
+    padding: 2rem;
+    align-items: center;
+}
+
+.skill-card i {
+    /* width: 1000px; */
+    font-size: 20px;
+    /* width: 100px; */
+    /* align-items: center; */
+}
+.skill-name{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    padding-top: 7px;
+}
+
+.skills-main {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    scrollbar-width: none;   
+    gap: 20px;
+}
+
+.project{
+    background-color: black;
+    color: whitesmoke;
+    padding: 2rem;
+    max-width: 50%;
+    border-radius: 20px;
+}
+
+.footer{
+    background-color: black; 
+    color: whitesmoke; 
+    padding: 2px; 
+    font-size: small;
+    bottom: 0;
+
+}
